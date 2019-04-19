@@ -1,22 +1,41 @@
-import React from "react"
+import React, { Component } from "react"
 
-const Nav = () => {
-  return (
-    <div className='nav'>
-      <h2>Sean Glancy</h2>
-      <ul>
+class Nav extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      selected: "Home",
+      list: ["Home", "Projects", "Contact", "Resume"]
+    }
+  }
+
+  renderList() {
+    const { list, selected } = this.state
+    return list.map(item => {
+      return item === selected ? (
         <a className='selected' href='#home'>
-          <li>Home</li>
+          <li>{item}</li>
         </a>
-        <a href='#projects'>
-          <li>Projects</li>
+      ) : (
+        <a
+          className=''
+          href='#home'
+          onClick={e => this.setState({ selected: item })}
+        >
+          <li>{item}</li>
         </a>
-        <a href='#contact'>
-          <li>Contact</li>
-        </a>
-      </ul>
-    </div>
-  )
+      )
+    })
+  }
+
+  render() {
+    return (
+      <div className='nav'>
+        <h2>Sean Glancy</h2>
+        <ul>{this.renderList()}</ul>
+      </div>
+    )
+  }
 }
 
 export default Nav
