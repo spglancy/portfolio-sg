@@ -122,6 +122,17 @@ em {
   font-size: 1.2em;
 }
 
+a > button {
+  cursor: pointer;
+  width: 110%;
+  height: 100%;
+  border-radius: 10px;
+  color: var(--main-color);
+  background-color: var(--highlight-color);
+  border: none;
+  font-size: 1.2em;
+}
+
 .lower {
   grid-area: l;
   margin-top: 7%;

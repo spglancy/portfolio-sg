@@ -13,14 +13,14 @@ class Nav extends Component {
     const { list, selected } = this.state
     return list.map(item => {
       return item === selected ? (
-        <a className='selected' href='#home'>
+        <a className='selected' href={"#" + item}>
           <li>{item}</li>
         </a>
       ) : (
         <a
           className=''
-          href='#home'
-          onClick={e => this.setState({ selected: item })}
+          href={"#" + item}
+          onClick={() => this.setState({ selected: item })}
         >
           <li>{item}</li>
         </a>
