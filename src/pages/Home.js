@@ -3,9 +3,9 @@ import Nav from "../components/nav"
 
 const Home = () => {
   return (
-    <div className='App'>
+    <div className="App">
       <Nav />
-      <div className='about'>
+      <div className="about">
         <h2>
           Hi, I'm <em>Sean Glancy</em>
         </h2>
@@ -15,16 +15,20 @@ const Home = () => {
           exciting technologies.
         </p>
         <div>
-          <a href='https://docs.google.com/document/d/14uN4HPk19BibcxZdlNvWqPvg5GghHtZaDgjlRYWYNlg/edit?usp=sharing'>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://docs.google.com/document/d/14uN4HPk19BibcxZdlNvWqPvg5GghHtZaDgjlRYWYNlg/edit?usp=sharing"
+          >
             <button>View Resume</button>
           </a>
           <button>Contact Sean</button>
         </div>
       </div>
-      <div className='lower'>
+      {/* <div className="lower">
         <p>Scroll Down to See my Projects</p>
-        <img src='/arrow.svg' alt='placeholder img' />
-      </div>
+        <img src="/arrow.svg" alt="placeholder img" />
+      </div> */}
     </div>
   )
 }

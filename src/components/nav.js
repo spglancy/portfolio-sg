@@ -5,7 +5,7 @@ class Nav extends Component {
     super(props)
     this.state = {
       selected: "Home",
-      list: ["Home", "Projects", "Contact", "Resume"]
+      list: ["Home", "Projects", "Contact"]
     }
   }
 
@@ -13,12 +13,12 @@ class Nav extends Component {
     const { list, selected } = this.state
     return list.map(item => {
       return item === selected ? (
-        <a className='selected' href={"#" + item}>
+        <a className="selected" href={"#" + item}>
           <li>{item}</li>
         </a>
       ) : (
         <a
-          className=''
+          className=""
           href={"#" + item}
           onClick={() => this.setState({ selected: item })}
         >
@@ -30,9 +30,19 @@ class Nav extends Component {
 
   render() {
     return (
-      <div className='nav'>
+      <div className="nav">
         <h2>Sean Glancy</h2>
-        <ul>{this.renderList()}</ul>
+        <ul>
+          {this.renderList()}
+          <a
+            className=""
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://docs.google.com/document/d/14uN4HPk19BibcxZdlNvWqPvg5GghHtZaDgjlRYWYNlg/edit?usp=sharing"
+          >
+            <li>Resume</li>
+          </a>
+        </ul>
       </div>
     )
   }
