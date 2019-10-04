@@ -25,14 +25,7 @@ html {
   height: 100vh;
 }
 
-.project {
-  border: 1px solid black;
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-
-ul > a {
+ul>a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,7 +41,7 @@ ul > a {
   justify-content: space-between;
 }
 
-.nav > ul {
+.nav>ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -60,7 +53,7 @@ ul > a {
   font-size: 1.3em;
 }
 
-.nav > ul > li {
+.nav>ul>li {
   height: 100%;
   width: 100%;
 }
@@ -78,7 +71,7 @@ ul > a {
   padding: 3vh;
 }
 
-.about > h2 {
+.about>h2 {
   font-size: 3.2em;
   letter-spacing: 2px;
   margin: 0;
@@ -86,8 +79,8 @@ ul > a {
   color: var(--main-color);
 }
 
-.about > p > em,
-.about > h2 > em {
+.about>p>em,
+.about>h2>em {
   color: var(--highlight-color);
 }
 
@@ -95,7 +88,7 @@ em {
   font-style: normal;
 }
 
-.about > p {
+.about>p {
   font-size: 1.9em;
   line-height: 5vh;
   text-align: left;
@@ -103,15 +96,15 @@ em {
   margin: 0;
 }
 
-.about > div {
+.about>div {
   display: flex;
   justify-content: space-between;
   height: 6.5vh;
   width: 60%;
 }
 
-.about > div > button,
-.about > div > a {
+.about>div>button,
+.about>div>a {
   cursor: pointer;
   width: 33%;
   height: 100%;
@@ -122,7 +115,7 @@ em {
   font-size: 1.2em;
 }
 
-.about a > button {
+.about a>button {
   cursor: pointer;
   width: 100%;
   height: 100%;
@@ -139,6 +132,31 @@ em {
   font-size: 1.4em;
 }
 
-.lower > p {
+.lower>p {
   margin: 0;
+}
+
+.project {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100vw;
+  height: 70vh;
+  background-color: rgb(80, 80, 80);
+}
+
+.desktopImage {
+  height: 70vh;
+  width: 125vh;
+  float: right;
+}
+
+.projectDesc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.projectDesc>h3 {
+  align-self: center;
 }

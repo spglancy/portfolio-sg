@@ -4,11 +4,13 @@ const Project = props => {
   const { title, desc, link, img } = props
   return (
     <div className="project">
-      <h3>{title}</h3>
+      <div className="projectDesc">
+        <h3>{title}</h3>
+        <p>{desc}</p>
+      </div>
       <a href={link}>
-        <img src={img} alt="placeholder img" />
+        <img className="desktopImage" src={img} alt="placeholder img" />
       </a>
-      <p>{desc}</p>
     </div>
   )
 }
