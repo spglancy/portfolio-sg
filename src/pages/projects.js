@@ -7,17 +7,19 @@ const Projects = props => {
       <div id="projects">
         <Project
           title="Pixels Against People"
-          desc="An online version of Cards Against Humanity"
-          link="https://pixels-against-people.herokuapp.com/"
-          img="/cah.png"
+          desc="An online version of the popular card game Cards Against Humanity built using the MERN stack."
+          link="https://pixelsagainstpeople.com"
+          img="/cah.svg"
+          tech="React, Express, Node, Mongo"
         />
       </div>
       <div id="projects">
         <Project
           title="Pixels Against People"
           desc="An online version of Cards Against Humanity"
-          link=""
-          img=""
+          link="https://pixelsagainstpeople.com"
+          img="cah.svg"
+          tech="React, Express, Node, Mongo"
         />
       </div>
     </div>

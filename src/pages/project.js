@@ -1,16 +1,21 @@
 import React from "react"
 
 const Project = props => {
-  const { title, desc, link, img } = props
+  const { title, desc, link, img, tech } = props
   return (
     <div className="project">
-      <div className="projectDesc">
-        <h3>{title}</h3>
-        <p>{desc}</p>
-      </div>
       <a href={link}>
         <img className="desktopImage" src={img} alt="placeholder img" />
       </a>
+      <div className="projectDesc">
+        <h1>{title}</h1>
+        <p>{desc}</p>
+        <div>
+          <a href={link}>Visit Site</a>
+          <a href={link}>View Github</a>
+        </div>
+
+      </div>
     </div>
   )
 }

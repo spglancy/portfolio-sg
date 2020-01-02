@@ -17,14 +17,14 @@ class Nav extends Component {
           <li>{item}</li>
         </a>
       ) : (
-        <a
-          className=""
-          href={"#" + item}
-          onClick={() => this.setState({ selected: item })}
-        >
-          <li>{item}</li>
-        </a>
-      )
+          <a
+            className=""
+            href={"#" + item}
+            onClick={() => this.setState({ selected: item })}
+          >
+            <li>{item}</li>
+          </a>
+        )
     })
   }
 
@@ -38,7 +38,7 @@ class Nav extends Component {
             className=""
             rel="noopener noreferrer"
             target="_blank"
-            href="https://docs.google.com/document/d/14uN4HPk19BibcxZdlNvWqPvg5GghHtZaDgjlRYWYNlg/edit?usp=sharing"
+            href="https://drive.google.com/file/d/1eZGpBocTfZT-w35n_7RPVHg_9Er1v-1D/view?usp=sharing"
           >
             <li>Resume</li>
           </a>
