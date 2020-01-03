@@ -1,6 +1,6 @@
 import React from "react"
 import Nav from "../components/nav"
-// figure out new upper design
+import './home.css'
 
 const Home = () => {
   return (

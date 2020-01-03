@@ -1,7 +1,8 @@
 import React from "react"
+import './projects.css'
 
 const Project = props => {
-  const { title, desc, link, img, tech } = props
+  const { title, desc, link, img } = props
   return (
     <div className="project">
       <a href={link}>
