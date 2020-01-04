@@ -6,5 +6,6 @@ html {
   --secondary-accent: rgb(238, 189, 97);
   --inverse-text: rgb(240, 240, 240);
   font-size: 2vh;
+  color: var(--main-text);
   scroll-behavior: smooth;
 }

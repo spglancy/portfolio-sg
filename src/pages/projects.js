@@ -4,43 +4,36 @@ import './projects.css'
 
 const Projects = props => {
   return (
-    <div>
-      <div id="projects">
-        <Project
-          title="Pixels Against People"
-          desc="An online version of the popular card game Cards Against Humanity built using the MERN stack."
-          link="https://pixelsagainstpeople.com"
-          img="/cah.svg"
-          tech="React, Express, Node, Mongo"
-        />
-      </div>
-      <div id="projects">
-        <Project
-          title="Pixels Against People"
-          desc="An online version of Cards Against Humanity"
-          link="https://pixelsagainstpeople.com"
-          img="cah.svg"
-          tech="React, Express, Node, Mongo"
-        />
-      </div>
-      <div id="projects">
-        <Project
-          title="Pixels Against People"
-          desc="An online version of Cards Against Humanity"
-          link="https://pixelsagainstpeople.com"
-          img="cah.svg"
-          tech="React, Express, Node, Mongo"
-        />
-      </div>
-      <div id="projects">
-        <Project
-          title="Pixels Against People"
-          desc="An online version of Cards Against Humanity"
-          link="https://pixelsagainstpeople.com"
-          img="cah.svg"
-          tech="React, Express, Node, Mongo"
-        />
-      </div>
+    <div className="projects" id="projects">
+      <h2 align='center'>PORTFOLIO</h2>
+      <Project
+        title="Pixels Against People"
+        desc="An online version of the popular card game Cards Against Humanity built using the MERN stack."
+        link="https://pixelsagainstpeople.com"
+        img="/cah.svg"
+        tech="React, Express, Node, Mongo"
+      />
+      <Project
+        title="Pixels Against People"
+        desc="An online version of Cards Against Humanity"
+        link="https://pixelsagainstpeople.com"
+        img="cah.svg"
+        tech="React, Express, Node, Mongo"
+      />
+      <Project
+        title="Pixels Against People"
+        desc="An online version of Cards Against Humanity"
+        link="https://pixelsagainstpeople.com"
+        img="cah.svg"
+        tech="React, Express, Node, Mongo"
+      />
+      <Project
+        title="Pixels Against People"
+        desc="An online version of Cards Against Humanity"
+        link="https://pixelsagainstpeople.com"
+        img="cah.svg"
+        tech="React, Express, Node, Mongo"
+      />
     </div>
   )
 }
