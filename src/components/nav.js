@@ -4,8 +4,15 @@ import './nav.css'
 function Nav() {
   return (
     <nav>
-      <h2>Sean Glancy</h2>
-      <ul>
+      <div>
+        <h2>Sean Glancy</h2>
+        <div className="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <ul id="menu">
         <li><a href='#banner'>Home<div></div></a></li>
         <li><a href='#projects'>Projects<div></div></a></li>
         <li><a href='#contact'>Contact<div></div></a></li>

@@ -47,3 +47,56 @@ nav li:hover div {
   height: .8vh;
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  nav {
+    width: 96vw;
+    flex-direction: column;
+  }
+
+  nav>ul {
+    display: none;
+    background: var(--main-accent);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: max-content;
+    z-index: 0;
+  }
+
+  nav>ul>li {
+    padding: 10px;
+  }
+
+  nav>div {
+    width: 96vw;
+    padding: 2vw 0 2vw 0;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hamburger>span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: var(--inverse-text);
+    border-radius: 3px;
+    z-index: 1;
+  }
+
+  .open {
+    display: block;
+  }
+}

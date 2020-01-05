@@ -71,5 +71,31 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  width: 60%;
+  width: 20vw;
+}
+
+@media screen and (max-width: 768px) {
+  .project {
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    width: 100vw;
+    padding: 5vh 0 5vh 0;
+    margin: 0;
+  }
+
+  .desktopImage {
+    width: 70vw;
+    height: 50vw;
+  }
+
+  .projectDesc {
+    width: 80vw;
+  }
+
+  .projectDesc>div {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+  }
 }
