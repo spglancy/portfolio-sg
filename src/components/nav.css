@@ -28,6 +28,7 @@ nav>ul>li>a {
   align-self: center;
   text-decoration: none;
   color: var(--inverse-text);
+  width: max-content
 }
 
 nav>ul>li>a>div {
@@ -52,6 +53,7 @@ nav li:hover div {
   nav {
     width: 96vw;
     flex-direction: column;
+    justify-content: flex-start;
   }
 
   nav>ul {
@@ -63,6 +65,8 @@ nav li:hover div {
     width: 100vw;
     height: max-content;
     z-index: 0;
+    transform: translate(0, -500px);
+    transition: 500ms;
   }
 
   nav>ul>li {
@@ -71,15 +75,16 @@ nav li:hover div {
 
   nav>div {
     width: 96vw;
-    padding: 2vw 0 2vw 0;
-    height: 8vh;
+    padding: 0 2vw 0 2vw;
     display: flex;
     justify-content: space-between;
+    max-height: 8vh;
     align-items: center;
+    z-index: 1;
   }
 
   .hamburger {
-    height: 80%;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -94,5 +99,11 @@ nav li:hover div {
     background: var(--inverse-text);
     border-radius: 3px;
     z-index: 1;
+  }
+
+  .open {
+    display: flex;
+    transform: translate(0, 0);
+    z-index: 0;
   }
 }
