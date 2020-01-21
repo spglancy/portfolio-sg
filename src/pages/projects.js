@@ -14,10 +14,10 @@ const Projects = props => {
         tech="React, Express, Node, Mongo"
       />
       <Project
-        title="Pixels Against People"
-        desc="An online version of Cards Against Humanity"
+        title="Reversi"
+        desc="A pass and play version of the game Reversi"
         link="https://pixelsagainstpeople.com"
-        img="cah.svg"
+        img="reversi.svg"
         tech="React, Express, Node, Mongo"
       />
       <Project

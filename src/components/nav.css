@@ -95,8 +95,4 @@ nav li:hover div {
     border-radius: 3px;
     z-index: 1;
   }
-
-  .open {
-    display: block;
-  }
 }
