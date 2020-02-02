@@ -5,12 +5,12 @@
   justify-content: center;
   background: var(--main-background);
   margin-top: 8vh;
-  height: 75vh;
+  height: 65vh;
   width: 100vw;
 }
 
 .banner>h1 {
-  font-size: 4.5em;
+  font-size: 3.5em;
   margin: 0;
 }
 

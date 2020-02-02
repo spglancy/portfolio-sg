@@ -1,0 +1,10 @@
+.footer {
+  height: 50vh;
+  width: 100vw;
+  background: var(--main-accent);
+  color: var(--inverse-text);
+}
+
+.footer>ul {
+  list-style-type: none;
+}
