@@ -5,7 +5,7 @@
   justify-content: center;
   background: var(--main-background);
   margin-top: 8vh;
-  height: 65vh;
+  height: 45vh;
   width: 100vw;
 }
 
@@ -14,8 +14,7 @@
   margin: 0;
 }
 
-.banner>p {
+.banner>span {
   font-size: 1.6em;
-  width: 40vw;
   color: var(--secondary-text);
 }
