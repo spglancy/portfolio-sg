@@ -20,20 +20,6 @@ const Projects = props => {
         img="reversi.svg"
         tech="React, Express, Node, Mongo"
       />
-      <Project
-        title="Pixels Against People"
-        desc="An online version of Cards Against Humanity"
-        link="https://pixelsagainstpeople.com"
-        img="cah.svg"
-        tech="React, Express, Node, Mongo"
-      />
-      <Project
-        title="Pixels Against People"
-        desc="An online version of Cards Against Humanity"
-        link="https://pixelsagainstpeople.com"
-        img="cah.svg"
-        tech="React, Express, Node, Mongo"
-      />
     </div>
   )
 }
